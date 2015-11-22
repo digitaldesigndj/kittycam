@@ -1,0 +1,14 @@
+{
+  "name": "liv.hyprtxt.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cam.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^11.1.2"
+  }
+}
