@@ -12,7 +12,7 @@ server.route
     console.log 'Frame Capture Initiated'
     time = new Date()
     timeString = time + ''
-    stamp = timeString.replace ' ', '_'
+    stamp = timeString.replace '/ /g', '_'
     captureFrame = spawn 'fswebcam' , [
       '-r'
       '640x480'
@@ -21,7 +21,7 @@ server.route
       '10'
     ]
     captureFrame.on 'close', ( code ) ->
-      reply.redirect 'http://liv.hyprtxt.com/webcam/' + stamp + '.jpg'
+      reply.redirect '/webcam/' + stamp + '.jpg'
 
 server.start ->
   console.log 'Server running at:', server.info.uri
