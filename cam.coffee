@@ -9,14 +9,13 @@ server.route
   method: 'GET'
   path: '/cam'
   handler: ( request, reply ) ->
-    who = request.info.address
     console.log 'Frame Capture Initiated'
     time = new Date()
     timeString = time + ''
     stamp = timeString.replace /\x20/g, '_'
     captureFrame = spawn 'fswebcam' , [
       '-r 640x480'
-      '/var/www/liv.hyprtxt.com/webcam/' + stamp +  '_' + who + '.jpg'
+      '/var/www/liv.hyprtxt.com/webcam/' + stamp + '.jpg'
       '-S 15'
     ]
     captureFrame.on 'close', ( code ) ->
