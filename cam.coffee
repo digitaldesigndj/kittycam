@@ -9,7 +9,7 @@ server.route
   method: 'GET'
   path: '/cam'
   handler: ( request, reply ) ->
-    who = request.headers['referer']
+    who = request.info.address
     console.log 'Frame Capture Initiated'
     time = new Date()
     timeString = time + ''
