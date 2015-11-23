@@ -14,11 +14,9 @@ server.route
     timeString = time + ''
     stamp = timeString.replace /\x20/g, '_'
     captureFrame = spawn 'fswebcam' , [
-      '-r'
-      '640x480'
+      '-r 640x480'
       '/var/www/liv.hyprtxt.com/webcam/' + stamp + '.jpg'
-      '-S'
-      '10'
+      '-S 15'
     ]
     captureFrame.on 'close', ( code ) ->
       reply.redirect '/webcam/' + stamp + '.jpg'
