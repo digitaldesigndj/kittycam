@@ -1,6 +1,6 @@
 # Taylor's Kitty Cam
 
-This was a simple weekend project. I wanted to create something with my new Raspberry Pi 2 and I had an old webcam lying around. After a  few hours of tinkering, and The Kitty Cam&#8482; was created.
+This was a simple weekend project. I wanted to create something with my new Raspberry Pi 2 and I had an old webcam lying around. After a  few hours of tinkering, The Kitty Cam&#8482; was created.
 
 ### Notes
 
