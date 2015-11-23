@@ -1,13 +1,44 @@
-<p>Welcome to Taylor's home on the network</p>
-<h2>The Kitty Cam</h2>
-<img src='/cam' />
-<style>
-body {
-  margin: 3rem;
-  font-family: sans-serif;
-}
-img {
-  width: 360px;
-  height: 240px;
-}
-</style>
+<!doctype>
+<html>
+  <head>
+    <title>The Hyprtxt Apartment</title>
+  </head>
+  <body>
+    <h1>Raspberry Pi</h1>
+    <p>Welcome to Taylor's home on the network</p>
+    <h2>The Kitty Cam</h2>
+    <div class="frame">
+      <p>Taking a picture...</p>
+      <img src='http://liv.hyprtxt.com/cam' />
+    </div>
+    <p>
+    <style>
+    body {
+      margin: 1rem;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    .frame {
+      width: 360px;
+      height: 240px;
+      background: #f2f2f2;
+      max-width: 100%;
+      position: relative;
+      margin: 0 auto;
+    }
+    .frame p {
+      width: 100%;
+      top: 20%;
+      position: absolute;
+      display: block;
+      z-index: 0;
+    }
+    .frame img {
+      max-width: 100%;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+    </style>
+  </body>
+</html>
