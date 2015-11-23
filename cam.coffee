@@ -12,7 +12,7 @@ server.route
     console.log 'Frame Capture Initiated'
     time = new Date()
     timeString = time + ''
-    stamp = timeString.replace / /g, '_'
+    stamp = timeString.replace /\x20/g, '_'
     captureFrame = spawn 'fswebcam' , [
       '-r'
       '640x480'
